@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gavrilescu Dental Practice</title>
+</head>
+<body>
+    <header>
+        <div class="header-box max-width">
+            <a href="/" class="logo"><img src="./icons/logo.svg" alt=""></a>
+            <div class="relative xl-hidden">
+                <input class="checkbox absolute w-full h-full opacity-0" type="checkbox" checked={menuOpen} onchange="toggleMenu(this)">
+                <div class="hamburger-lines pointer-events-none flex flex-col justify-between">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+            <ul class="menu">
+              <a href="/" class="underlined">Home</a>
+              <a href="/servicii-tarife">Servicii și tarife</a>
+              <a href="/pacienti">Pacienții Noștri</a>
+              <button class="btn contact"><a href="/contact">Contact</a></button>
+            </ul>
+        </div>
+      </header>
+    <script src="script.js"></script>
+</body>
+</html>
