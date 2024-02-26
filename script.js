@@ -39,6 +39,16 @@ const dentalServices  = [
         title: "Obturatii realizate sub izolare cu diga",
         description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
     },
+    {id: 7,
+        src: "./images/hero.jpg",
+        title: "Lucrari proteticeg",
+        description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
+    },
+    {id: 8,
+        src: "./images/hero.jpg",
+        title: "Obturatii realizate sub izolare cu diga",
+        description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
+    },
 
 ]
 const carousel = document.querySelector('.carousel');

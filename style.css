@@ -21,6 +21,8 @@ body {
 .mt-0 { margin-top: 0;}
 .white { color: white;}
 .black { color: black;}
+.main-padding-y {padding: 3rem 0;}
+h1, h2, h3, h4, h5, p, span { padding: 0; margin: 0;}
 .max-width {
     margin: auto;
     width: 90%;
@@ -216,6 +218,9 @@ header {
     background-color: black;
   }
 
+  .highlights {
+    background-color: black;
+  }
 
 
 
