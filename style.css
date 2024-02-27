@@ -186,7 +186,7 @@ header {
   }
   .card h3 { 
     margin-bottom: 0.5rem;
-    min-height: 3rem;
+    /* min-height: 3rem; */
 
 }
 

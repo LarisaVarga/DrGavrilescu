@@ -11,42 +11,42 @@ function toggleMenu(checkbox) {
 const dentalServices  = [
     {id: 1,
         src: "./images/albire.jpg",
-        title: "Albire dentara",
+        title: "Profilaxie",
         description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
     },
     {id: 2,
         src: "./images/remineralizare.jpg",
-        title: "Tratament de remineralizare",
+        title: "Terapie dentara",
         description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
     },
     {id: 3,
         src: "./images/microscop.jpg",
-        title: "Tratamente endodontice efectuate la microscop",
+        title: "Endodontie",
         description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
     },
     {id: 4,
         src: "./images/coroane.jpg",
-        title: "Coroane si fatete dentare ceramice",
+        title: "Protetica",
         description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
     },
     {id: 5,
         src: "./images/hero.jpg",
-        title: "Lucrari proteticeg",
+        title: "Chirurgie",
         description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
     },
     {id: 6,
         src: "./images/hero.jpg",
-        title: "Obturatii realizate sub izolare cu diga",
+        title: "Pedodontie",
         description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
     },
     {id: 7,
         src: "./images/hero.jpg",
-        title: "Lucrari proteticeg",
+        title: "Ortodontie",
         description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
     },
     {id: 8,
         src: "./images/hero.jpg",
-        title: "Obturatii realizate sub izolare cu diga",
+        title: "Cosmetica si estetica dentara",
         description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
     },
 
