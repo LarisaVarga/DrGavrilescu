@@ -16,17 +16,17 @@ const dentalServices  = [
     },
     {id: 2,
         src: "./images/remineralizare.jpg",
-        title: "Terapie dentara",
+        title: "Terapie dentară",
         description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
     },
     {id: 3,
         src: "./images/microscop.jpg",
-        title: "Endodontie",
+        title: "Endodonție",
         description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
     },
     {id: 4,
         src: "./images/coroane.jpg",
-        title: "Protetica",
+        title: "Protetică",
         description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
     },
     {id: 5,
@@ -36,17 +36,17 @@ const dentalServices  = [
     },
     {id: 6,
         src: "./images/hero.jpg",
-        title: "Pedodontie",
+        title: "Pedodonție",
         description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
     },
     {id: 7,
         src: "./images/hero.jpg",
-        title: "Ortodontie",
+        title: "Ortodonție",
         description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
     },
     {id: 8,
         src: "./images/hero.jpg",
-        title: "Cosmetica si estetica dentara",
+        title: "Cosmetică și estetică dentară",
         description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
     },
 
