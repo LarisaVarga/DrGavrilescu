@@ -59,73 +59,11 @@ const dentalServices  = [
     },
 
 ]
-// const carousel = document.querySelector('.carousel');
-// const prevButton = document.querySelector('.prev');
-// const nextButton = document.querySelector('.next');
-
-// let currentIndex = 0;
-// let itemsPerPage = 4;
-
-// function showServices() {
-//   carousel.innerHTML = '';
-//   const endIndex = Math.min(currentIndex + itemsPerPage, dentalServices.length);
-
-//   // Adjust itemsPerPage dynamically based on screen size
-//   if (window.innerWidth <= 768) {
-//     itemsPerPage = dentalServices.length;
-//   } else if( window.innerWidth <= 1024) {
-//     itemsPerPage = 4; 
-//   }
-
-//   for (let i = currentIndex; i < endIndex; i++) {
-//     const service = dentalServices[i];
-//     const card = document.createElement('div');
-//     card.classList.add('card');
-//     card.innerHTML = `
-//       <img src="${service.src}" alt="${service.title}">
-//       <h3>${service.title}</h3>
-//       <p>${service.description}</p>
-//     `;
-//     carousel.appendChild(card);
-//   }
-// }
-
-// function showNextServices() {
-//   if (itemsPerPage < dentalServices.length) { // Only navigate if pagination is enabled
-//     currentIndex += itemsPerPage;
-//     if (currentIndex >= dentalServices.length) {
-//       currentIndex = 0;
-//     }
-//   }
-//   showServices();
-// }
-
-// function showPrevServices() {
-//   if (itemsPerPage < dentalServices.length) { // Only navigate if pagination is enabled
-//     currentIndex -= itemsPerPage;
-//     if (currentIndex < 0) {
-//       currentIndex = Math.max(0, dentalServices.length - itemsPerPage);
-//     }
-//   }
-//   showServices();
-// }
-
-// // Add event listener to window resize event
-// window.addEventListener('resize', () => {
-//   showServices(); // Recalculate and re-render based on updated screen size
-// });
-
-// prevButton.addEventListener('click', showPrevServices);
-// nextButton.addEventListener('click', showNextServices);
-
-// showServices();.
 
 const carousel = document.querySelector('.carousel');
 const mobileCarousel = document.querySelector('.mobile-carousel');
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
-
-
 
 let currentIndex = 0;
 const itemsPerPage = 4;
@@ -164,7 +102,6 @@ function showPrevServices() {
 
 prevButton.addEventListener('click', showPrevServices);
 nextButton.addEventListener('click', showNextServices);
-
 showServices();
 
 function showServicesMobile() {
@@ -182,3 +119,40 @@ function showServicesMobile() {
 }
 
 showServicesMobile();
+
+const highlightsWrapper = document.querySelector('.highlights-inner');
+const highlights  = [
+    {
+        id: 1,
+        src: "./icons/modern-tech.svg",
+        title: "Tehnologie moderna",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+    },
+    {
+        id: 2,
+        src: "./icons/no-pain.svg",
+        title: "Urgențe stomatologice",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+    },
+    {
+        id: 3,
+        src: "./icons/emergencies.svg",
+        title: "Fără durere",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+    },
+]
+function showHighlights() {
+    highlightsWrapper.innerHTML = '';
+    highlights.forEach(service => {
+        const card = document.createElement('div');
+        card.classList.add('highlights-card');
+        card.innerHTML = `
+            <img src="${service.src}" alt="${service.title}">
+            <h3 class="uppercase">${service.title}</h3>
+            <p>${service.description}</p>
+        `;
+        highlightsWrapper.appendChild(card);
+    });
+}
+
+showHighlights();

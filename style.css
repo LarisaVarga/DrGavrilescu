@@ -23,6 +23,7 @@ body {
 .black { color: black;}
 .main-padding-y {padding: 3rem 0;}
 h1, h2, h3, h4, h5, p, span { padding: 0; margin: 0;}
+.text-center {text-align: center;}
 .max-width {
     margin: auto;
     width: 90%;
@@ -158,14 +159,16 @@ header {
 .carousel { display: none; }
 
   .card {
-    flex: 0 0 auto;
-    /* width: calc( 25% - 45px ); */
+    flex: 0 0 auto; 
     padding: 15px;
     background-color: #f0f0f0;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     scroll-snap-align: start;
     margin: 20px 0;
+  }
+  .highlights-card {
+    margin: 40px 0;
   }
 
   .card img {
@@ -271,7 +274,14 @@ header {
     }
     .controls {
         display: block;
-      }
+    }
+    .highlights-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    .highlights-card {
+        width: 30%;
+    }
 }
 
 @media screen and (min-width: 1280px) {
