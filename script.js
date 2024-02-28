@@ -156,3 +156,41 @@ function showHighlights() {
 }
 
 showHighlights();
+
+
+const testimonialsWrapper = document.querySelector('.testimonials-inner');
+const testimonials  = [
+    {
+        id: 1,
+        src: "./icons/quotes.svg",
+        title: "Nume pacient",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+    },
+    {
+        id: 2,
+        src: "./icons/quotes.svg",
+        title: "Nume pacient",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+    },
+    {
+        id: 3,
+        src: "./icons/quotes.svg",
+        title: "Nume pacient",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+    },
+]
+function showTestimonials() {
+    testimonialsWrapper.innerHTML = '';
+    testimonials.forEach(service => {
+        const card = document.createElement('div');
+        card.classList.add('testimonials-card');
+        card.innerHTML = `
+            <h3 class="uppercase">${service.title}</h3>
+            <img class="testimonials-img" src="${service.src}" alt="${service.title}">
+            <p>${service.description}</p>
+        `;
+        testimonialsWrapper.appendChild(card);
+    });
+}
+
+showTestimonials();
