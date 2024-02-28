@@ -235,14 +235,18 @@ header {
 }
 .story-inner {
     margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.story-inner p {  text-align: center;}
 .my-pic {
     width: 200px;
     height: 200px;
     object-fit: cover;
     border: 10px solid #AE9D67;
     border-radius: 50%;
-    margin: 0 40px;
+    margin: 40px;
 }
 
 footer {
@@ -250,8 +254,19 @@ footer {
 }
 .footer-top {
     border-bottom: 2px solid black;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-top-pte { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-top-pte .pte-item {
+    margin: 10px 0;
 }
 footer a {
     text-decoration: none;
@@ -325,6 +340,15 @@ footer a {
     .testimonials-card {
         width: calc( 33.3% - 60px);
     }
+    /* .story-inner {} */
+    .footer-top-pte {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .footer-top-pte .pte-item {
+        margin: 10px 20px;
+    }
 }
 
 @media screen and (min-width: 1280px) {
@@ -341,4 +365,16 @@ footer a {
     .card:last-child {
         margin-right: 0;
     }
+    .footer-top {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer-top-pte .pte-item:last-child {
+        margin: 10px 0px 10px 20px;
+    }
+    .story-inner {
+        flex-direction: row;
+    }
+    .story-inner p:first-child { text-align: right;}
+    .story-inner p:last-child { text-align: left;}
 }
