@@ -4,6 +4,13 @@ body {
     padding: 0;
     font-family: 'Poppins';
 }
+body * { padding: 0; margin: 0;}
+h1 {font-size: 30px;}
+h2 {font-size: 24px;}
+h3 {font-size: 20px; margin-bottom: 10px; }
+h4 {font-size: 16px; }
+h5 {font-size: 16px; font-weight: 500;}
+p {font-size: 14px;}
 .relative { position: relative;}
 .absolute { position: absolute;}
 .opacity-0 { opacity: 0;}
@@ -22,8 +29,9 @@ body {
 .white { color: white;}
 .black { color: black;}
 .main-padding-y {padding: 3rem 0;}
-h1, h2, h3, h4, h5, p, span { padding: 0; margin: 0;}
+
 .text-center {text-align: center;}
+.text-right {text-align: right;}
 .max-width {
     margin: auto;
     width: 90%;
@@ -204,7 +212,7 @@ header {
     background-color: black;
 }
 
-.highlights {
+.highlights, .my-story {
     background-color: black;
 }
 .highlights-card {
@@ -222,6 +230,17 @@ header {
 }
 .testimonials-img {
     width: 30px;
+}
+.story-inner {
+    margin-top: 40px;
+}
+.my-pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 10px solid #AE9D67;
+    border-radius: 50%;
+    margin: 0 40px;
 }
 @media screen and (min-width: 600px) {
     .mobile-carousel {
@@ -301,7 +320,7 @@ header {
     .card {
         width: calc( 25% - 45px );
         margin-bottom: 20px;
-        min-height: 22rem;
+        min-height: 20rem;
         margin-right: 20px;
     }
     .card:last-child {

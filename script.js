@@ -77,7 +77,7 @@ function showServices() {
         card.classList.add('card');
         card.innerHTML = `
             <img src="${service.src}" alt="${service.title}">
-            <h3>${service.title}</h3>
+            <h4>${service.title}</h4>
             <p>${service.description}</p>
         `;
         carousel.appendChild(card);
@@ -111,7 +111,7 @@ function showServicesMobile() {
         card.classList.add('card');
         card.innerHTML = `
             <img src="${service.src}" alt="${service.title}">
-            <h3>${service.title}</h3>
+            <h4>${service.title}</h4>
             <p>${service.description}</p>
         `;
         mobileCarousel.appendChild(card);
