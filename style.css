@@ -155,10 +155,7 @@ header {
     max-width: 100%;
 }
 
-/* .carousel {
-    display: flex;
-    flex-wrap: wrap;
-} */
+.carousel { display: none; }
 
   .card {
     flex: 0 0 auto;
@@ -216,7 +213,7 @@ header {
   }
 
 @media screen and (min-width: 600px) {
-    .carousel {
+    .mobile-carousel {
         display: flex;
         flex-wrap: wrap;
     } 
@@ -240,10 +237,7 @@ header {
         height: 75vh;
     }
     .hero-text { height: calc(75vh - 6rem);}
-        
-    .controls {
-        display: block;
-    }
+
     
 }
 
@@ -266,8 +260,11 @@ header {
     }
     .menu a.underlined { text-decoration: underline;}
     .menu .btn, .menu a:last-child {margin: 0;}
-
+    .mobile-carousel {display: none;}
     .carousel {
+        display: flex;
+        flex-wrap: wrap;
+        transition: transform 0.3s ease-in-out;
         overflow-x: hidden; /* Hide overflow for non-touch devices */
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS */
@@ -284,7 +281,7 @@ header {
     .hero-text { height: 24rem;}
     .card {
         width: calc( 25% - 45px );
-        margin-bottom: 0px;
+        margin-bottom: 20px;
         min-height: 22rem;
         margin-right: 20px;
     }
