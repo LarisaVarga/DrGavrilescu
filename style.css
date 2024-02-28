@@ -20,6 +20,7 @@ p {font-size: 14px;}
 .items-center { align-items: center; }
 .justify-between { justify-content: space-between; }
 .justify-center { justify-content: center;}
+.justify-end { justify-content: flex-end;}
 .flex-col { flex-direction: column; }
 .w-full { width: 100%; }
 .h-full { height: 100%; }
@@ -29,7 +30,8 @@ p {font-size: 14px;}
 .white { color: white;}
 .black { color: black;}
 .main-padding-y {padding: 3rem 0;}
-
+.mr-10 { margin-right: 10px;}
+.mr-30 { margin-right: 30px;}
 .text-center {text-align: center;}
 .text-right {text-align: right;}
 .max-width {
@@ -241,6 +243,19 @@ header {
     border: 10px solid #AE9D67;
     border-radius: 50%;
     margin: 0 40px;
+}
+
+footer {
+    background-color: rgba(174, 157, 103, 0.3)
+}
+.footer-top {
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+footer a {
+    text-decoration: none;
+    color: black;
 }
 @media screen and (min-width: 600px) {
     .mobile-carousel {
