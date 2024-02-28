@@ -36,9 +36,10 @@ p {font-size: 14px;}
 .text-right {text-align: right;}
 .max-width {
     margin: auto;
-    width: 90%;
+    width: 92%;
     max-width: 1300px;
 }
+.w-full-mobile { width: 100%;}
 header {
     height: 5rem;
     position: fixed;
@@ -78,7 +79,7 @@ header {
 .menu a, .btn a {
     text-decoration: none;
     color: black;
-    font-size: 1.125rem;
+    font-size: 1.1rem;
     font-weight: 500;
     margin: 2.5rem 0;
 }
@@ -101,6 +102,9 @@ header {
 }
 .btn:hover a {
     color: #AE9D67;
+}
+.btn.suna { 
+    margin-top: 20px;
 }
 .hamburger-lines {
     width: 2rem;
@@ -184,9 +188,8 @@ header {
     height: 13rem;
     object-fit: cover;
 }
-.card h3 { 
-    margin-bottom: 0.5rem;
-    /* min-height: 3rem; */
+.card h4 { 
+    margin: 0.5rem 0;
 }
 
 .controls {
@@ -200,10 +203,10 @@ header {
     color: white;
     border-radius: 100%;
     margin-left: 10px;
-    padding: 0.5rem 0.75rem;
+    padding: 0.75rem 1rem;
 }
 .prev svg, .next svg {
-    width: 0.7rem;
+    width: 0.72rem;
     fill: white;
     display: flex;
     align-items: center;
@@ -349,6 +352,7 @@ footer a {
     .footer-top-pte .pte-item {
         margin: 10px 20px;
     }
+    .w-full-mobile { width: auto;}
 }
 
 @media screen and (min-width: 1280px) {
