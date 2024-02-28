@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gavrilescu Dental Practice</title>
+</head>
+<body>
+    <header>
+        <div class="header-box max-width">
+            <a href="/" class="logo"><img src="./icons/logo.svg" alt=""></a>
+            <div class="relative xl-hidden">
+                <input class="checkbox absolute w-full h-full opacity-0" type="checkbox" checked={menuOpen} onchange="toggleMenu(this)">
+                <div class="hamburger-lines pointer-events-none flex flex-col justify-between">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </div>
+            <ul class="menu">
+              <a href="/">Home</a>
+              <a href="/servicii-tarife.html" class="underlined">Servicii și tarife</a>
+              <a href="/pacienti.html">Pacienții Noștri</a>
+              <button class="btn contact"><a href="/contact.html">Contact</a></button>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="hero-wrapper small">
+            <div class="hero-overlay small"></div>
+            <div class="hero-text small flex flex-col items-center justify-center">
+                <h1 class="uppercase">Servicii</h1>
+                <h5>Lista completa de servicii o gasiti aici</h5>
+                <!-- <h2 class="mt-0">Dr. Anca Gavrilescu</h2> -->
+                <!-- <button class="btn suna"><a href="tel:+40766505707">+40 766 505 707</a></button> -->
+            </div>
+        </section>
+        
+        <section class="servicii max-width main-padding-y">
+
+        </section>
+        
+        <footer class="main-padding-y">
+            <div class="max-width">
+                <div class="footer-top">
+                    <div class="logo"><img src="./icons/logo.svg" alt=""></div>
+                    <div class="footer-top-pte">
+                        <div class="pte-item flex items-center justify-center">
+                            <img class="mr-10" src="/icons/program.svg" alt="Program">
+                            <p>L-V 09:00 - 18:00</p>
+                        </div>
+                        <a href="tel:+40766505707" class="pte-item flex items-center justify-center">
+                            <img class="mr-10" src="/icons/phone.svg" alt="Telefon">
+                            <p>+40 766 505 707</p>
+                        </a>
+                        <a href="mailto:dr.ancagavrilescu@gmail.com" class="pte-item flex items-center justify-center">
+                            <img class="mr-10" src="/icons/email.svg" alt="Email">
+                            <p>dr.ancagavrilescu@gmail.com</p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-center">2024 © Gavrilescu Dental Practice SRL. Toate drepturile rezervate.</p>
+                </div>
+            </div>
+            
+        </footer>
+        
+    </main>
+
+    <script>
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>

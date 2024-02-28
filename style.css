@@ -169,6 +169,12 @@ header {
     height: calc(100vh - 11rem);
     max-width: 100%;
 }
+.hero-wrapper.small, .hero-overlay.small {
+    height: calc(50vh - 5rem);
+}
+.hero-text.small {
+    height: calc(50vh - 11rem);
+}
 
 .carousel { display: none; }
 
@@ -305,6 +311,12 @@ footer a {
 }
 
 @media screen and (min-width: 1024px) {
+    .hero-wrapper.small, .hero-overlay.small {
+        height: calc(40vh - 5rem);
+    }
+    .hero-text.small {
+        height: calc(40vh - 11rem);
+    }
     .xl-hidden {
         display: none;
     }
