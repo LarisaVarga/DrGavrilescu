@@ -281,6 +281,47 @@ footer a {
     text-decoration: none;
     color: black;
 }
+.service-category {
+    background-color: rgba(174, 157, 103, 0.3);
+    margin-bottom: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.service-category h3 {
+    background-color: #AE9D67;
+    margin: 0;
+    padding: 5px 15px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.service-list {
+    list-style: none;
+}
+.service-item {
+    border-bottom: 1px solid #AE9D67;
+    padding: 8px 15px;
+}
+.service-item:last-child {
+    border: none;
+}
+.title-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-extra {
+    font-size: 80%;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 5px;
+}
+.service-price {
+    min-width: 60px;
+    font-weight: 700;
+    text-align: end;
+}
+
 @media screen and (min-width: 600px) {
     .mobile-carousel {
         display: flex;
@@ -296,6 +337,7 @@ footer a {
     .card:nth-child(even){
         margin-left: 10px;
     }
+    .service-extra { text-align: right;}
 }
 
 @media screen and (min-width: 768px) {
@@ -306,8 +348,6 @@ footer a {
         height: 75vh;
     }
     .hero-text { height: calc(75vh - 6rem);}
-
-    
 }
 
 @media screen and (min-width: 1024px) {
