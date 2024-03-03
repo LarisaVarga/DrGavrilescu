@@ -11,6 +11,7 @@ h3 {font-size: 20px; margin-bottom: 10px; }
 h4 {font-size: 16px; }
 h5 {font-size: 16px; font-weight: 500;}
 p {font-size: 14px;}
+img { max-width: 100%;}
 .relative { position: relative;}
 .absolute { position: absolute;}
 .opacity-0 { opacity: 0;}
@@ -331,7 +332,12 @@ footer a {
     font-weight: 700;
     text-align: end;
 }
-
+.contact-section {
+    text-align: center;
+}
+.contact-section img {
+    max-width: 15rem;
+}
 @media screen and (min-width: 600px) {
     .carousel {
         display: flex;
@@ -362,6 +368,15 @@ footer a {
         height: 75vh;
     }
     .hero-text { height: calc(75vh - 6rem);}
+    .contact-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+    .patients-section {
+        min-height: calc( 50vh - 25rem);
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -407,6 +422,10 @@ footer a {
     }
     .w-full-mobile { width: auto;}
     .card img { height: 15rem;}
+
+    .patients-section, .contact-section {
+        min-height: calc( 50vh - 20.8rem);
+    }
 }
 
 @media screen and (min-width: 1280px) {
@@ -443,11 +462,6 @@ footer a {
     .story-inner p:first-child { text-align: right;}
     .story-inner p:last-child { text-align: left;}
 
-    .contact-section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
     .contact-section img {
         width: 12rem;
         object-fit: cover;
