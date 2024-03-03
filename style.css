@@ -175,7 +175,15 @@ header {
 .hero-text.small {
     height: calc(50vh - 11rem);
 }
-
+.hero-wrapper.small.services {
+    background-image: url("./images/services.png");
+}
+.hero-wrapper.small.contact {
+    background-image: url("./images/contact.png");
+}
+.hero-wrapper.small.patients {
+    background-image: url("./images/patients.png");
+}
 
 .card {
     flex: 0 0 auto; 
@@ -357,12 +365,7 @@ footer a {
 }
 
 @media screen and (min-width: 1024px) {
-    .hero-wrapper.small, .hero-overlay.small {
-        height: calc(40vh - 5rem);
-    }
-    .hero-text.small {
-        height: calc(40vh - 11rem);
-    }
+
     .xl-hidden {
         display: none;
     }
@@ -411,6 +414,12 @@ footer a {
         height: 30rem;
     }
     .hero-text { height: 24rem;}
+    .hero-wrapper.small, .hero-overlay.small {
+        height: 16rem;
+    }
+    .hero-text.small {
+        height: 10rem;
+    }
     .card {
         width: calc( 25% - 50px );
         margin-bottom: 20px;
@@ -433,4 +442,16 @@ footer a {
     }
     .story-inner p:first-child { text-align: right;}
     .story-inner p:last-child { text-align: left;}
+
+    .contact-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-section img {
+        width: 12rem;
+        object-fit: cover;
+    }
+
+    .patients-section { min-height: calc( 100vh - 39rem);}
 }
