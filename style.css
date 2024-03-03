@@ -4,7 +4,7 @@ body {
     padding: 0;
     font-family: 'Poppins';
 }
-body * { padding: 0; margin: 0;}
+body * { padding: 0; margin: 0; box-sizing: border-box; }
 h1 {font-size: 30px; font-weight: 700;}
 h2 {font-size: 24px;}
 h3 {font-size: 20px; margin-bottom: 10px; }
@@ -30,7 +30,7 @@ img { max-width: 100%;}
 .mt-0 { margin-top: 0;}
 .white { color: white;}
 .black { color: black;}
-.main-padding-y {padding: 3rem 0;}
+.main-padding-y {padding: 2.5rem 0;}
 .mr-10 { margin-right: 10px;}
 .mr-30 { margin-right: 30px;}
 .text-center {text-align: center;}
@@ -144,7 +144,7 @@ header {
     position: relative;
     padding-top: 5rem;
     width: 100%;
-    height: calc(100vh - 5rem);
+    height: 100vh;
     background-image: url("./images/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -163,18 +163,18 @@ header {
 }
 
 .hero-text {
-    margin: 3rem;
+    padding: 3rem;
     position: relative;
     color: white;
     text-align: center;
-    height: calc(100vh - 11rem);
+    height: calc(100vh - 5rem);
     max-width: 100%;
 }
-.hero-wrapper.small, .hero-overlay.small {
-    height: calc(50vh - 5rem);
+.hero-wrapper.small {
+    height: 25rem;
 }
-.hero-text.small {
-    height: calc(50vh - 11rem);
+.hero-text.small, .hero-overlay.small {
+    height: 20rem;
 }
 .hero-wrapper.small.services {
     background-image: url("./images/services.png");
@@ -204,31 +204,6 @@ header {
 }
 .card h4 { 
     margin: 0.5rem 0;
-}
-
-.controls {
-    display: none;
-}
-
-.prev, .next {
-    cursor: pointer;
-    border: none;
-    background-color: #AE9D67;
-    color: white;
-    border-radius: 100%;
-    margin-left: 10px;
-    padding: 0.75rem 1rem;
-}
-.prev svg, .next svg {
-    width: 0.72rem;
-    fill: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.prev:hover, .next:hover {
-    background-color: black;
 }
 
 .my-story {
@@ -270,7 +245,10 @@ header {
 }
 
 footer {
+    height: 17rem;
     background-color: rgba(174, 157, 103, 0.3);
+    display: flex;
+    align-items: center;
 }
 .footer-top {
     border-bottom: 2px solid black;
@@ -279,6 +257,9 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.footer-top img {
+    display: none;
 }
 .footer-top-pte { 
     display: flex;
@@ -338,6 +319,10 @@ footer a {
 .contact-section img {
     max-width: 15rem;
 }
+
+.patients-section,.contact-section { min-height: calc( 100vh - 42rem);}
+
+
 @media screen and (min-width: 600px) {
     .carousel {
         display: flex;
@@ -348,7 +333,7 @@ footer a {
         -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS */
     }
     .card {
-        width: calc( 50% - 40px );
+        width: calc( 50% - 10px );
         margin: 10px 0;
     }
     .card:nth-child(odd){
@@ -358,29 +343,34 @@ footer a {
         margin-left: 10px;
     }
     .service-extra { text-align: right;}
+
+    footer {
+        height: 16rem;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .menu {
         width: 50%;
     }
-    .hero-wrapper, .hero-overlay {
-        height: 75vh;
-    }
-    .hero-text { height: calc(75vh - 6rem);}
+    .hero-wrapper { height: 55vh; }
+    .hero-text,.hero-overlay { height: calc(55vh - 5rem); }
+    .hero-wrapper.small { height: 30rem; }
+    .hero-text.small, .hero-overlay.small { height: 25rem; }
+    .patients-section, .contact-section { min-height: calc( 100vh - 46em); }
     .contact-section {
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: left;
     }
-    .patients-section {
-        min-height: calc( 50vh - 25rem);
-    }
 }
 
 @media screen and (min-width: 1024px) {
-
+    .hero-wrapper.small { height: 40rem; }
+    .hero-text.small, .hero-overlay.small { height: 35rem; }
+    .patients-section, .contact-section { min-height: calc( 100vh - 55em); }
+    footer { height: 15rem;}
     .xl-hidden {
         display: none;
     }
@@ -412,6 +402,10 @@ footer a {
         width: calc( 33.3% - 60px);
     }
     /* .story-inner {} */
+    .footer-top { 
+        flex-direction: row;
+        justify-content: space-between;
+    }
     .footer-top-pte {
         display: flex;
         justify-content: space-between;
@@ -420,27 +414,22 @@ footer a {
     .footer-top-pte .pte-item {
         margin: 10px 20px;
     }
+    .footer-top img { display: block;}
     .w-full-mobile { width: auto;}
     .card img { height: 15rem;}
 
-    .patients-section, .contact-section {
-        min-height: calc( 50vh - 20.8rem);
-    }
+    
 }
 
 @media screen and (min-width: 1280px) {
-    .hero-wrapper, .hero-overlay {
-        height: 30rem;
-    }
-    .hero-text { height: 24rem;}
-    .hero-wrapper.small, .hero-overlay.small {
-        height: 16rem;
-    }
-    .hero-text.small {
-        height: 10rem;
-    }
+    .hero-wrapper,.hero-wrapper.small { height: 25rem;}
+    .hero-text, .hero-overlay,.hero-text.small, .hero-overlay.small { height: 20rem; }
+
+    .patients-section, .contact-section { min-height: calc( 100vh - 35em); }
+    footer { height: 10rem;}
+
     .card {
-        width: calc( 25% - 50px );
+        width: calc( 25% - 20px );
         margin-bottom: 20px;
         margin-right: 20px;
     }
@@ -466,6 +455,5 @@ footer a {
         width: 12rem;
         object-fit: cover;
     }
-
-    .patients-section { min-height: calc( 100vh - 39rem);}
+    .service-category { margin-bottom: 2.5rem;}
 }
