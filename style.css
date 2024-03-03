@@ -223,8 +223,11 @@ header {
     background-color: black;
 }
 
-.highlights, .my-story {
-    background-color: black;
+.my-story {
+    background-color: white;
+}
+.highlights {
+    background: black;
 }
 .highlights-card {
     margin: 40px 0;
@@ -253,13 +256,13 @@ header {
     width: 200px;
     height: 200px;
     object-fit: cover;
-    border: 10px solid #AE9D67;
+    border: 10px solid rgba(174, 157, 103, 0.5);
     border-radius: 50%;
     margin: 40px;
 }
 
 footer {
-    background-color: rgba(174, 157, 103, 0.3)
+    background-color: rgba(174, 157, 103, 0.3);
 }
 .footer-top {
     border-bottom: 2px solid black;

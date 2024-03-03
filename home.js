@@ -1,49 +1,49 @@
 const dentalServices  = [
     {
         id: 1,
-        src: "./images/albire.jpg",
+        src: "./images/profilaxie.png",
         title: "Profilaxie",
         description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
     },
     {
         id: 2,
-        src: "./images/remineralizare.jpg",
+        src: "./images/obturatie-compozit.jpg",
         title: "Terapie dentară",
         description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
     },
     {
         id: 3,
-        src: "./images/microscop.jpg",
+        src: "./images/endodontie.jpg",
         title: "Endodonție",
         description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
     },
     {
         id: 4,
-        src: "./images/coroane.jpg",
+        src: "./images/proteica.png",
         title: "Protetică",
         description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
     },
     {
         id: 5,
-        src: "./images/hero.jpg",
+        src: "./images/chirurgie.png",
         title: "Chirurgie",
         description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
     },
     {
         id: 6,
-        src: "./images/hero.jpg",
+        src: "./images/pentodontie.png",
         title: "Pedodonție",
         description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
     },
     {
         id: 7,
-        src: "./images/hero.jpg",
+        src: "./images/ortodontie.png",
         title: "Ortodonție",
         description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
     },
     {
         id: 8,
-        src: "./images/albire.jpg",
+        src: "./images/albire.png",
         title: "Cosmetică și estetică dentară",
         description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
     },
@@ -182,5 +182,4 @@ function showTestimonials() {
         testimonialsWrapper.appendChild(card);
     });
 }
-
-showTestimonials();
+if(testimonialsWrapper) {showTestimonials();}
