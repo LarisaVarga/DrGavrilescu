@@ -49,66 +49,23 @@ const dentalServices  = [
     },
 
 ]
-
 const carousel = document.querySelector('.carousel');
-const mobileCarousel = document.querySelector('.mobile-carousel');
-const prevButton = document.querySelector('.prev');
-const nextButton = document.querySelector('.next');
 
-let currentIndex = 0;
-const itemsPerPage = 4;
+        function showServices() {
+            carousel.innerHTML = '';
+            dentalServices.forEach(service => {
+                const card = document.createElement('div');
+                card.classList.add('card');
+                card.innerHTML = `
+                    <img src="${service.src}" alt="${service.title}">
+                    <h4>${service.title}</h4>
+                    <p>${service.description}</p>
+                `;
+                carousel.appendChild(card);
+            });
+        }
 
-function showServices() {
-    carousel.innerHTML = '';
-    const endIndex = Math.min(currentIndex + itemsPerPage, dentalServices.length);
-    for (let i = currentIndex; i < endIndex; i++) {
-        const service = dentalServices[i];
-        const card = document.createElement('div');
-        card.classList.add('card');
-        card.innerHTML = `
-            <img src="${service.src}" alt="${service.title}">
-            <h4>${service.title}</h4>
-            <p>${service.description}</p>
-        `;
-        carousel.appendChild(card);
-    }
-}
-
-function showNextServices() {
-    currentIndex += itemsPerPage;
-    if (currentIndex >= dentalServices.length) {
-        currentIndex = 0;
-    }
-    showServices();
-}
-
-function showPrevServices() {
-    currentIndex -= itemsPerPage;
-    if (currentIndex < 0) {
-        currentIndex = Math.max(0, dentalServices.length - itemsPerPage);
-    }
-    showServices();
-}
-if(prevButton) { prevButton.addEventListener('click', showPrevServices); }
-if (nextButton) { nextButton.addEventListener('click', showNextServices); }
-
-showServices();
-
-function showServicesMobile() {
-    mobileCarousel.innerHTML = '';
-    dentalServices.forEach(service => {
-        const card = document.createElement('div');
-        card.classList.add('card');
-        card.innerHTML = `
-            <img src="${service.src}" alt="${service.title}">
-            <h4>${service.title}</h4>
-            <p>${service.description}</p>
-        `;
-        mobileCarousel.appendChild(card);
-    });
-}
-
-showServicesMobile();
+        showServices();
 
 const highlightsWrapper = document.querySelector('.highlights-inner');
 const highlights  = [

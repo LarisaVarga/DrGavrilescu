@@ -80,7 +80,7 @@ header {
     text-decoration: none;
     color: black;
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: 600;
     margin: 2.5rem 0;
 }
 .menu .btn {
@@ -176,7 +176,6 @@ header {
     height: calc(50vh - 11rem);
 }
 
-.carousel { display: none; }
 
 .card {
     flex: 0 0 auto; 
@@ -326,10 +325,14 @@ footer a {
 }
 
 @media screen and (min-width: 600px) {
-    .mobile-carousel {
+    .carousel {
         display: flex;
         flex-wrap: wrap;
-    } 
+        transition: transform 0.3s ease-in-out;
+        overflow-x: hidden; /* Hide overflow for non-touch devices */
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS */
+    }
     .card {
         width: calc( 50% - 40px );
         margin: 10px 0;
@@ -378,15 +381,7 @@ footer a {
     }
     .menu a.underlined { text-decoration: underline;}
     .menu .btn, .menu a:last-child {margin: 0;}
-    .mobile-carousel {display: none;}
-    .carousel {
-        display: flex;
-        flex-wrap: wrap;
-        transition: transform 0.3s ease-in-out;
-        overflow-x: hidden; /* Hide overflow for non-touch devices */
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch; /* for smooth scrolling on iOS */
-    }
+
     .controls {
         display: block;
     }
@@ -408,6 +403,7 @@ footer a {
         margin: 10px 20px;
     }
     .w-full-mobile { width: auto;}
+    .card img { height: 15rem;}
 }
 
 @media screen and (min-width: 1280px) {
@@ -416,14 +412,15 @@ footer a {
     }
     .hero-text { height: 24rem;}
     .card {
-        width: calc( 25% - 45px );
+        width: calc( 25% - 50px );
         margin-bottom: 20px;
-        min-height: 20rem;
         margin-right: 20px;
     }
     .card:last-child {
         margin-right: 0;
     }
+    .card img { height: 12rem;}
+
     .footer-top {
         flex-direction: row;
         justify-content: space-between;
