@@ -3,49 +3,49 @@ const dentalServices  = [
         id: 1,
         src: "./images/profilaxie.png",
         title: "Profilaxie",
-        description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
+        description: "Prevenirea apariției celor mai frecvente afecțiuni dentare: cariile și boală parodontala, prin îndepărtarea profesională a tartrului și a plăcii bacteriene."
     },
     {
         id: 2,
         src: "./images/obturatie-compozit.jpg",
         title: "Terapie dentară",
-        description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
+        description: "Tratamentul cariilor prin îndepărtarea lor și refacerea structurii dentar."
     },
     {
         id: 3,
         src: "./images/endodontie.jpg",
         title: "Endodonție",
-        description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
+        description: "Tratamentul canalelor dentare, prin instrumentare la microscop și dezinfecție, scopul fiind stoparea complicațiilor din cariile profunde, care au lezat pulpă dentară."
     },
     {
         id: 4,
         src: "./images/proteica.png",
         title: "Protetică",
-        description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
+        description: "Înlocuirea dinților lipsa, reconstrucția dinților cu distructie avansată, cu refacerea integrității arcadelor dentare."
     },
     {
         id: 5,
         src: "./images/chirurgie.png",
         title: "Chirurgie",
-        description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
+        description: "Extracția molarilor de minte erupți parțial sau incluși, implantologie, îndepărtarea unor formațiuni chistice, regenerare gingivală și osoasă, microchirurgie estetică muco-gingivală."
     },
     {
         id: 6,
         src: "./images/pentodontie.png",
         title: "Pedodonție",
-        description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
+        description: "Servicii de stomatologie pediatrică."
     },
     {
         id: 7,
         src: "./images/ortodontie.png",
         title: "Ortodonție",
-        description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
+        description: "Corectarea anomaliilor dento-maxilarea și alinierea corectă a dinților"
     },
     {
         id: 8,
         src: "./images/albire.png",
         title: "Cosmetică și estetică dentară",
-        description: "Professional cleaning to remove plaque and tartar buildup, promoting oral health."
+        description: "Albire dentară, realizarea de fațete dentare ceramice sau din compozit, microchirugie gingivală,  gingivectomii."
     },
 
 ]
