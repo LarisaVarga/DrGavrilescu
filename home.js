@@ -73,19 +73,19 @@ const highlights  = [
         id: 1,
         src: "./icons/modern-tech.svg",
         title: "Tehnologie moderna",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+        description: "Clinica noastră folosește tehnologie de ultimă generație pentru diagnostice precise și tratamente eficiente, asigurând îngrijiri de înaltă calitate pentru pacienții noștri."
     },
     {
         id: 2,
         src: "./icons/no-pain.svg",
         title: "Urgențe stomatologice",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+        description: "Urgențele stomatologice pot fi descurajante, dar echipa noastră calificată acordă prioritate îngrijirii rapide și cuprinzătoare pentru a oferi o ușurare imediată și un tratament specializat."
     },
     {
         id: 3,
         src: "./icons/emergencies.svg",
         title: "Fără durere",
-        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+        description: "La clinica noastră, acordăm prioritate confortului dumneavoastră, oferind tratamente blânde, fără durere, folosind tehnici avansate și opțiuni de anestezie."
     },
 ]
 function showHighlights() {
