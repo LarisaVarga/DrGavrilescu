@@ -57,7 +57,8 @@ header {
     justify-content: space-between;
     height: 5rem;
 }
-.logo img { width: 9.5rem;}
+.logo { height: 5rem;}
+.logo img { width: 9.5rem; height: 5rem; object-fit: cover;}
 .menu {
     display: flex;
     align-items: center;
@@ -88,8 +89,8 @@ header {
     margin-top: 2.5rem;
 }
 .btn {
-    background-color: #AE9D67;
-    border: 2px solid #AE9D67;
+    background-color: #8F6E5D;
+    border: 2px solid #8F6E5D;
     border-radius: 6px;
     padding: 6px 15px;
     font-family: 'Poppins';
@@ -102,7 +103,7 @@ header {
  background-color: white;
 }
 .btn:hover a {
-    color: #AE9D67;
+    color: #8F6E5D;
 }
 .btn.suna { 
     margin-top: 20px;
@@ -189,7 +190,8 @@ header {
 .card {
     flex: 0 0 auto; 
     padding: 15px;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
+    background-color: rgba(143, 110, 93, 0.15);
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     scroll-snap-align: start;
@@ -239,19 +241,19 @@ header {
     width: 200px;
     height: 200px;
     object-fit: cover;
-    border: 10px solid rgba(174, 157, 103, 0.5);
+    border: 10px solid rgba(143, 110, 93, 0.6);
     border-radius: 50%;
     margin: 40px;
 }
 
 footer {
     height: 17rem;
-    background-color: rgba(174, 157, 103, 0.3);
+    background-color: #8F6E5D;
     display: flex;
     align-items: center;
 }
 .footer-top {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
     padding-bottom: 10px;
     margin-bottom: 20px;
     display: flex;
@@ -271,16 +273,17 @@ footer {
 }
 footer a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 .service-category {
-    background-color: rgba(174, 157, 103, 0.3);
+    /* background-color: rgba(174, 157, 103, 0.3); */
+    background-color: rgba(143, 110, 93, 0.15);;
     margin-bottom: 15px;
     border-radius: 5px;
     overflow: hidden;
 }
 .service-category h3 {
-    background-color: #AE9D67;
+    background-color: #8F6E5D;
     margin: 0;
     padding: 5px 15px;
     color: white;
@@ -291,7 +294,7 @@ footer a {
     list-style: none;
 }
 .service-item {
-    border-bottom: 1px solid #AE9D67;
+    border-bottom: 1px solid #8F6E5D;
     padding: 8px 15px;
 }
 .service-item:last-child {
