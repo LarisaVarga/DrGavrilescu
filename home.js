@@ -9,7 +9,7 @@ const dentalServices  = [
         id: 2,
         src: "./images/obturatie-compozit.jpg",
         title: "Terapie dentară",
-        description: "Tratamentul cariilor prin îndepărtarea lor și refacerea structurii dentar."
+        description: "Tratamentul cariilor prin îndepărtarea lor și refacerea structurii dentare."
     },
     {
         id: 3,
