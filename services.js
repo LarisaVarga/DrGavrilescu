@@ -293,7 +293,7 @@ const servicesAndPrices  = [
         category: "Estetica",
         title: "Albire dentara",
         price: "1000 lei"
-    },.
+    },
     {
         id: 50,
         category: "Parodontologie",
