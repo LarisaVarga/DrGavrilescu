@@ -88,7 +88,7 @@ const servicesAndPrices  = [
         id: 15,
         category: "Stomatologie generală",
         title: "Pivot fibra sticla",
-        price: 350 lei"
+        price: "350 lei"
     },
     {
         id: 16,
