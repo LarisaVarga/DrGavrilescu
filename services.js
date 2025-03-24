@@ -81,7 +81,7 @@ const servicesAndPrices  = [
     {
         id: 14,
         category: "Stomatologie generală",
-        title: "Retratament endodontic frontal",
+        title: "Retratament endodontic molar",
         price: "750 lei"
     },
     {
@@ -175,6 +175,24 @@ const servicesAndPrices  = [
         price: "3500 lei"
     },
     {
+        id: 29b,
+        category: "Stomatologie generală",
+        title: "Coroana metalo-ceramica pe implant - bont protetic clasic",
+        price: "1200 lei"
+    },
+    {
+        id: 29c,
+        category: "Stomatologie generală",
+        title: "Coroana  metalo-ceramica pe implant - multi-unit OT",
+        price: "2000 lei"
+    },
+    {
+        id: 29d,
+        category: "Stomatologie generală",
+        title: "Coroana zirconiu pe implant",
+        price: "1500 lei"
+    },
+    {
         id: 30,
         category: "Chirurgie",
         title: "Extractie inte monoradicular",
@@ -261,8 +279,26 @@ const servicesAndPrices  = [
     {
         id: 44,
         category: "Chirurgie",
-        title: "Implant dentar",
-        price: "2400 lei"
+        title: "implant dentar JD",
+        price: "2500 lei"
+    },
+    {
+        id: 44b,
+        category: "Chirurgie",
+        title: "Implant dentar Megagen Any Ridge",
+        price: "3000 lei"
+    },
+    {
+        id: 44c,
+        category: "Chirurgie",
+        title: "Descoperire implant + grefa tesut moale",
+        price: "500 lei"
+    },
+    {
+        id: 44d,
+        category: "Chirurgie",
+        title: "Aditie osoasa cu blocuri os autolog/artificial",
+        price: "2000 lei"
     },
     {
         id: 45,
