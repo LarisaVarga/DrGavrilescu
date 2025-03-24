@@ -175,19 +175,19 @@ const servicesAndPrices  = [
         price: "3500 lei"
     },
     {
-        id: 29b,
+        id: 291,
         category: "Stomatologie generală",
         title: "Coroana metalo-ceramica pe implant - bont protetic clasic",
         price: "1200 lei"
     },
     {
-        id: 29c,
+        id: 292,
         category: "Stomatologie generală",
         title: "Coroana  metalo-ceramica pe implant - multi-unit OT",
         price: "2000 lei"
     },
     {
-        id: 29d,
+        id: 293,
         category: "Stomatologie generală",
         title: "Coroana zirconiu pe implant",
         price: "1500 lei"
@@ -283,19 +283,19 @@ const servicesAndPrices  = [
         price: "2500 lei"
     },
     {
-        id: 44b,
+        id: 441,
         category: "Chirurgie",
         title: "Implant dentar Megagen Any Ridge",
         price: "3000 lei"
     },
     {
-        id: 44c,
+        id: 442,
         category: "Chirurgie",
         title: "Descoperire implant + grefa tesut moale",
         price: "500 lei"
     },
     {
-        id: 44d,
+        id: 443,
         category: "Chirurgie",
         title: "Aditie osoasa cu blocuri os autolog/artificial",
         price: "2000 lei"
