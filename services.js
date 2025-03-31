@@ -457,7 +457,7 @@ const servicesAndPrices  = [
         price: "5200 lei"
     },
     {
-        id: 69,
+        id: 691,
         category: "Ortodontie",
         title: "Disjunctor hibrid (ancoraj mixt)",
         price: "5200 lei"
