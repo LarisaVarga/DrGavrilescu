@@ -195,7 +195,7 @@ const servicesAndPrices  = [
     {
         id: 30,
         category: "Chirurgie",
-        title: "Extractie inte monoradicular",
+        title: "Extractie dinte monoradicular",
         price: "150 lei"
     },
     {
